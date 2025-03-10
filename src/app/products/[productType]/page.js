@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Search, Star, SlidersHorizontal } from "lucide-react"
+import { categoryInfo } from "@/constants/products"
 
 export default function ProductTypePage({ params }) {
   // Get the product type from the URL parameters
@@ -12,69 +13,7 @@ export default function ProductTypePage({ params }) {
     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
     .join(' ')
 
-  // Get category-specific information
-  const categoryInfo = {
-    'landing-pages': {
-      description: 'Professional, conversion-optimized landing page templates',
-      count: 2500
-    },
-    'saas-solutions': {
-      description: 'Ready-to-deploy software as a service applications',
-      count: 1800
-    },
-    'telegram-bots': {
-      description: 'Automated bot solutions for Telegram platform',
-      count: 950
-    },
-    'fullstack-apps': {
-      description: 'Complete web applications with frontend and backend',
-      count: 1200
-    },
-    '3d-models': {
-      description: 'High-quality 3D assets and models',
-      count: 3000
-    },
-    'ui-components': {
-      description: 'Reusable software components and libraries',
-      count: 2800
-    },
-    'api-services': {
-      description: 'Ready-to-use API endpoints and microservices',
-      count: 850
-    },
-    'mobile-apps': {
-      description: 'Cross-platform mobile applications',
-      count: 1500
-    },
-    'wordpress-themes': {
-      description: 'Custom WordPress themes and plugins',
-      count: 2200
-    },
-    'email-templates': {
-      description: 'Responsive HTML email templates',
-      count: 1600
-    },
-    'design-systems': {
-      description: 'Complete design system packages with documentation',
-      count: 750
-    },
-    'analytics-tools': {
-      description: 'Custom analytics and tracking solutions',
-      count: 900
-    },
-    'chrome-extensions': {
-      description: 'Browser extensions and add-ons',
-      count: 1100
-    },
-    'ai-models': {
-      description: 'Pre-trained machine learning models and datasets',
-      count: 800
-    },
-    'php-scripts': {
-      description: 'Choose from over 3,100 PHP scripts. Explore items created by our global community.',
-      count: 3100
-    }
-  }
+  // Get category information from constants
 
   const info = categoryInfo[productType] || {
     description: `Explore our collection of ${displayName}`,
@@ -128,7 +67,17 @@ export default function ProductTypePage({ params }) {
 
         {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {Array.from({ length: 8 }).map((_, i) => (
+          {(categoryInfo[productType]?.products || Array.from({ length: 8 }, (_, i) => ({
+            id: `${productType}-${i + 1}`,
+            title: `${displayName} Template ${i + 1}`,
+            description: `High-quality ${displayName} solution`,
+            author: 'DigitalTeam',
+            rating: 4.5,
+            reviews: 312,
+            price: 49.99,
+            sales: 1000,
+            image: `https://picsum.photos/400/300?random=${i}`
+          }))).map((product, i) => (
             <div key={i} className="group border rounded-lg overflow-hidden bg-card hover:shadow-lg transition-all duration-200">
               <div className="aspect-[4/3] bg-muted relative">
                 <img 
@@ -141,17 +90,17 @@ export default function ProductTypePage({ params }) {
                 </div>
               </div>
               <div className="p-4">
-                <h3 className="font-semibold group-hover:text-primary transition-colors line-clamp-1">Premium {displayName} Template</h3>
-                <p className="text-sm text-muted-foreground mt-1">by DigitalTeam</p>
+                <h3 className="font-semibold group-hover:text-primary transition-colors line-clamp-1">{product.title}</h3>
+                <p className="text-sm text-muted-foreground mt-1">by {product.author}</p>
                 <div className="mt-2 flex items-center text-amber-500">
                   {Array.from({ length: 5 }).map((_, i) => (
                     <Star key={i} className="h-4 w-4 fill-current" />
                   ))}
-                  <span className="text-xs text-muted-foreground ml-2">(312)</span>
+                  <span className="text-xs text-muted-foreground ml-2">({product.reviews})</span>
                 </div>
                 <div className="mt-4 flex items-center justify-between">
-                  <span className="text-lg font-bold">${(Math.random() * 100).toFixed(2)}</span>
-                  <div className="text-xs text-muted-foreground">{Math.floor(Math.random() * 5000)}+ Sales</div>
+                  <span className="text-lg font-bold">${product.price}</span>
+                  <div className="text-xs text-muted-foreground">{product.sales}+ Sales</div>
                 </div>
               </div>
             </div>
