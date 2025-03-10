@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Digital Asset Marketplace
+
+A modern digital marketplace built with Next.js for selling and discovering premium digital assets, from landing pages to 3D models.
+
+# Design Principles
+- **User-Friendly**: Easy navigation and intuitive design
+- **Responsive**: Works seamlessly on all devices
+- **Performance**: Optimized for fast loading times
+- **Accessibility**: Ensures everyone can use the platform
+- **Security**: Ensures data privacy and security
+- **Scalability**: Can grow with the needs of the market
+- **Customizable**: Allows for easy customization
+- **SEO**: Optimized for search engines
+- **Design**: Modern, clean, simple, minimilastic and sleek design
+- **Design System**: A design system for building consistent and scalable user interfaces
+- **Analytics**: Custom analytics and tracking solutions
+- **Codes**: follow component wise coding management write optimised codes
+
+## Features
+
+- **Landing Pages**: Professional, conversion-optimized landing page templates
+- **SaaS Solutions**: Ready-to-deploy software as a service applications
+- **Telegram Bots**: Automated bot solutions for Telegram platform
+- **Fullstack Apps**: Complete web applications with frontend and backend
+- **3D Models**: High-quality 3D assets and models
+- **UI Components**: Reusable software components and libraries
+- **API Services**: Ready-to-use API endpoints and microservices
+- **Mobile Apps**: Cross-platform mobile applications
+- **WordPress Themes**: Custom WordPress themes and plugins
+- **Email Templates**: Responsive HTML email templates
+- **Design Systems**: Complete design system packages with documentation
+- **Analytics Tools**: Custom analytics and tracking solutions
+- **Chrome Extensions**: Browser extensions and add-ons
+- **AI Models**: Pre-trained machine learning models and datasets
+
+## Tech Stack
+
+- **Framework**: Next.js 15.2.1
+- **UI**: React 19.0.0, shadcn/ui
+- **Database**: Prisma ORM
+- **Styling**: TailwindCSS 4.x
+- **Icons**: Lucide React
+- **Utilities**: class-variance-authority, clsx, tailwind-merge
+- **Development**: ESLint, Turbopack
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js (LTS version recommended)
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone <repository-url>
+cd store-sh
+```
+
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Start the development server
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Development
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev`: Starts development server with Turbopack
+- `npm run build`: Creates production build
+- `npm run start`: Runs production server
+- `npm run lint`: Runs ESLint for code quality
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+store-sh/
+├── public/          # Static assets
+├── src/
+│   ├── app/         # Next.js app directory
+│   └── lib/         # Utility functions
+├── components.json  # UI component configuration
+└── tailwind.config.js
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Support
+
+For support, please open an issue in the repository or contact the maintainers.
