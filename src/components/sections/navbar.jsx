@@ -18,8 +18,7 @@ export function Navbar() {
         </nav>
         <div className="flex items-center space-x-4">
           <ThemeSwitcher />
-          <Link href="/login" className="text-sm font-medium hover:text-primary transition-colors hidden md:block">Login</Link>
-          <Link href="/signup" className="bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 rounded-md text-sm font-medium transition-all duration-200 hover:scale-105 hidden md:block">Sign Up</Link>
+           <Link href="/join" className="bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 rounded-md text-sm font-medium transition-all duration-200 hover:scale-105 hidden md:block">Join</Link>
           <Button variant="ghost" size="icon" className="md:hidden">
             <Menu className="h-6 w-6" />
           </Button>
