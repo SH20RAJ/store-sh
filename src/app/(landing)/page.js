@@ -3,7 +3,8 @@ import { Features } from "@/components/sections/features"
 
 import { Stats } from "@/components/sections/stats"
 import { Testimonials } from "@/components/sections/testimonials"
-import { Link } from "lucide-react"
+import Link from "next/link"
+
 
 export default function Home() {
   return (
@@ -14,8 +15,9 @@ export default function Home() {
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">A modern marketplace for high-quality digital assets, templates, and components.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/products" className="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-8 py-3 text-sm font-medium shadow transition-colors hover:bg-primary/90">Browse Products</Link>
-            <Link href="/about" className="inline-flex items-center justify-center rounded-md border border-input bg-background px-8 py-3 text-sm font-medium shadow-sm hover:bg-accent hover:text-accent-foreground">Learn More</Link>
+            <Link href="/about" className="inline-flex items-center justify-center rounded-md border border-input bg-background text-foreground px-8 py-3 text-sm font-medium shadow-sm hover:bg-accent hover:text-accent-foreground">Learn More</Link>
           </div>
+
         </div>
       </div>
       <Features />
