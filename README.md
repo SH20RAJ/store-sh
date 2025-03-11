@@ -1,67 +1,110 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`c3`](https://developers.cloudflare.com/pages/get-started/c3).
+# Vaultora
+
+A premium digital asset vault built with Next.js, offering a secure and innovative marketplace for discovering and trading high-end digital assets, from landing pages to AI models.
+
+# Design Principles
+- **User-Friendly**: Intuitive navigation with premium user experience
+- **Responsive**: Seamless adaptation across all devices
+- **Performance**: Lightning-fast loading and execution
+- **Accessibility**: Universal design for all users
+- **Security**: Bank-grade data protection and privacy
+- **Scalability**: Enterprise-ready infrastructure
+- **Customizable**: Flexible personalization options
+- **SEO**: Advanced search engine optimization
+- **Design**: Sophisticated, minimalist, and futuristic aesthetics
+- **Design System**: Enterprise-grade UI/UX framework
+- **Analytics**: Advanced metrics and insights
+- **Code Quality**: Component-driven architecture with optimized performance
+
+## Features
+
+- **Landing Pages**: Premium conversion-optimized templates
+- **SaaS Solutions**: Enterprise-ready software solutions
+- **Telegram Bots**: Advanced automated communication systems
+- **Fullstack Apps**: Comprehensive web applications
+- **3D Models**: Premium quality 3D assets
+- **UI Components**: Professional component libraries
+- **API Services**: Scalable microservices architecture
+- **Mobile Apps**: Enterprise mobile solutions
+- **WordPress Themes**: Premium WordPress integrations
+- **Email Templates**: Professional email frameworks
+- **Design Systems**: Enterprise design packages
+- **Analytics Tools**: Advanced data insights
+- **Chrome Extensions**: Custom browser solutions
+- **AI Models**: Production-ready ML models
+
+## Tech Stack
+
+- **Framework**: Next.js 15.2.1
+- **UI**: React 19.0.0, shadcn/ui
+- **Database**: Prisma ORM
+- **Styling**: TailwindCSS 4.x
+- **Icons**: Lucide React
+- **Utilities**: class-variance-authority, clsx, tailwind-merge
+- **Development**: ESLint, Turbopack
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js (LTS version recommended)
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone <repository-url>
+cd store-sh
+```
+
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Start the development server
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Cloudflare integration
+## Development
 
-Besides the `dev` script mentioned above `c3` has added a few extra scripts that allow you to integrate the application with the [Cloudflare Pages](https://pages.cloudflare.com/) environment, these are:
-  - `pages:build` to build the application for Pages using the [`@cloudflare/next-on-pages`](https://github.com/cloudflare/next-on-pages) CLI
-  - `preview` to locally preview your Pages application using the [Wrangler](https://developers.cloudflare.com/workers/wrangler/) CLI
-  - `deploy` to deploy your Pages application using the [Wrangler](https://developers.cloudflare.com/workers/wrangler/) CLI
+- `npm run dev`: Starts development server with Turbopack
+- `npm run build`: Creates production build
+- `npm run start`: Runs production server
+- `npm run lint`: Runs ESLint for code quality
 
-> __Note:__ while the `dev` script is optimal for local development you should preview your Pages application as well (periodically or before deployments) in order to make sure that it can properly work in the Pages environment (for more details see the [`@cloudflare/next-on-pages` recommended workflow](https://github.com/cloudflare/next-on-pages/blob/main/internal-packages/next-dev/README.md#recommended-development-workflow))
+## Project Structure
 
-### Bindings
+```
+store-sh/
+├── public/          # Static assets
+├── src/
+│   ├── app/         # Next.js app directory
+│   └── lib/         # Utility functions
+├── components.json  # UI component configuration
+└── tailwind.config.js
+```
 
-Cloudflare [Bindings](https://developers.cloudflare.com/pages/functions/bindings/) are what allows you to interact with resources available in the Cloudflare Platform.
+## Contributing
 
-You can use bindings during development, when previewing locally your application and of course in the deployed application:
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-- To use bindings in dev mode you need to define them in the `next.config.js` file under `setupDevBindings`, this mode uses the `next-dev` `@cloudflare/next-on-pages` submodule. For more details see its [documentation](https://github.com/cloudflare/next-on-pages/blob/05b6256/internal-packages/next-dev/README.md).
+## License
 
-- To use bindings in the preview mode you need to add them to the `pages:preview` script accordingly to the `wrangler pages dev` command. For more details see its [documentation](https://developers.cloudflare.com/workers/wrangler/commands/#dev-1) or the [Pages Bindings documentation](https://developers.cloudflare.com/pages/functions/bindings/).
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-- To use bindings in the deployed application you will need to configure them in the Cloudflare [dashboard](https://dash.cloudflare.com/). For more details see the  [Pages Bindings documentation](https://developers.cloudflare.com/pages/functions/bindings/).
+## Support
 
-#### KV Example
-
-`c3` has added for you an example showing how you can use a KV binding.
-
-In order to enable the example:
-- Search for javascript/typescript lines containing the following comment:
-  ```ts
-  // KV Example:
-  ```
-  and uncomment the commented lines below it (also uncomment the relevant imports).
-- In the `wrangler.jsonc` file add the following configuration line:
-  ```
-  "kv_namespaces": [{ "binding": "MY_KV_NAMESPACE", "id": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" }],
-  ```
-- If you're using TypeScript run the `cf-typegen` script to update the `env.d.ts` file:
-  ```bash
-  npm run cf-typegen
-  # or
-  yarn cf-typegen
-  # or
-  pnpm cf-typegen
-  # or
-  bun cf-typegen
-  ```
-
-After doing this you can run the `dev` or `preview` script and visit the `/api/hello` route to see the example in action.
-
-Finally, if you also want to see the example work in the deployed application make sure to add a `MY_KV_NAMESPACE` binding to your Pages application in its [dashboard kv bindings settings section](https://dash.cloudflare.com/?to=/:account/pages/view/:pages-project/settings/functions#kv_namespace_bindings_section). After having configured it make sure to re-deploy your application.
+For support, please open an issue in the repository or contact the maintainers.
