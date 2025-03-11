@@ -7,7 +7,7 @@ export function Footer() {
       <div className="container py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <h3 className="text-lg font-bold">Store SH</h3>
+            <h3 className="text-lg font-bold">Vaultora</h3>
             <p className="text-sm text-muted-foreground">Building the future of digital assets marketplace. Join us in revolutionizing how creators share and monetize their work.</p>
             <div className="flex space-x-4">
               <Link href="https://facebook.com/sh20raj" className="text-muted-foreground hover:text-primary">
@@ -60,7 +60,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-12 pt-8 border-t text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Store SH. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Vaultora. All rights reserved.</p>
         </div>
       </div>
     </footer>

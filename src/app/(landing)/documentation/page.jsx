@@ -57,7 +57,7 @@ export default function DocumentationPage() {
       <div className="text-center mb-16">
         <h1 className="text-4xl font-bold tracking-tight mb-4">Documentation</h1>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-          Comprehensive guides and references for Store SH platform
+          Comprehensive guides and references for Vaultora platform
         </p>
       </div>
 

@@ -7,7 +7,7 @@ export default function AboutPage() {
       <div className="flex flex-col space-y-12">
         {/* Hero Section */}
         <div className="text-center space-y-4">
-          <h1 className="text-4xl font-bold tracking-tight">About Store SH</h1>
+          <h1 className="text-4xl font-bold tracking-tight">About Vaultora</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Your trusted marketplace for premium digital assets and solutions.
           </p>
@@ -18,7 +18,7 @@ export default function AboutPage() {
           <div className="space-y-4">
             <h2 className="text-3xl font-bold">Our Mission</h2>
             <p className="text-muted-foreground">
-              At Store SH, we're dedicated to providing developers and businesses with high-quality digital assets that accelerate their development process and enhance their projects.
+              At Vaultora, we're dedicated to providing developers and businesses with high-quality digital assets that accelerate their development process and enhance their projects.
             </p>
             <Button size="lg">Join Our Community</Button>
           </div>

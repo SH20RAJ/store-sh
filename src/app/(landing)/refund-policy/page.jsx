@@ -17,7 +17,7 @@ export default function RefundPolicyPage() {
         <div>
           <h2 className="text-lg font-semibold mb-2 text-destructive">No Refunds on Digital Products</h2>
           <p className="text-muted-foreground">
-            Due to the nature of digital products and to protect our creators' intellectual property, all sales are final. We do not offer refunds on any digital products purchased through Store SH.
+            Due to the nature of digital products and to protect our creators' intellectual property, all sales are final. We do not offer refunds on any digital products purchased through Vaultora.
           </p>
         </div>
       </div>

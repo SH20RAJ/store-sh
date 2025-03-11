@@ -8,7 +8,7 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: "Store SH",
+  title: "Vaultora",
   description: "A modern e-commerce platform built with Next.js",
 };
 

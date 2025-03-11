@@ -8,7 +8,7 @@ export default function HelpCenterPage() {
   const categories = [
     {
       title: "Getting Started",
-      description: "Learn the basics of using Store SH",
+      description: "Learn the basics of using Vaultora",
       links: [
         { title: "Account Setup", href: "#" },
         { title: "Platform Overview", href: "#" },
@@ -49,7 +49,7 @@ export default function HelpCenterPage() {
       <div className="text-center mb-16">
         <h1 className="text-4xl font-bold tracking-tight mb-4">Help Center</h1>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-          Find answers to common questions and learn how to make the most of Store SH
+          Find answers to common questions and learn how to make the most of Vaultora
         </p>
       </div>
 

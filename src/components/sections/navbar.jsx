@@ -8,7 +8,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between">
         <Link href="/products" className="flex items-center space-x-2">
-          <span className="text-xl font-bold">Store SH</span>
+          <span className="text-xl font-bold">Vaultora</span>
         </Link>
         <nav className="hidden md:flex items-center space-x-6">
           <Link href="/products" className="text-sm font-medium hover:text-primary">Products</Link>

@@ -39,7 +39,7 @@ export default function PressKitPage() {
       <div className="text-center max-w-3xl mx-auto mb-16">
         <h1 className="text-4xl font-bold tracking-tight mb-4">Press Kit</h1>
         <p className="text-xl text-muted-foreground">
-          Everything you need to tell the Store SH story. Download official logos, screenshots, and other assets.
+          Everything you need to tell the Vaultora story. Download official logos, screenshots, and other assets.
         </p>
       </div>
 

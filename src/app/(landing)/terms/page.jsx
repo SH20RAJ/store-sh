@@ -17,7 +17,7 @@ export default function TermsPage() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-4">1. Acceptance of Terms</h2>
           <p className="text-muted-foreground mb-4">
-            By accessing and using Store SH's services, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing our services.
+            By accessing and using Vaultora's services, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing our services.
           </p>
         </section>
 
@@ -36,7 +36,7 @@ export default function TermsPage() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-4">3. User Obligations</h2>
           <p className="text-muted-foreground mb-4">
-            Users of Store SH agree to:
+            Users of Vaultora agree to:
           </p>
           <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
             <li>Provide accurate account information</li>
@@ -49,14 +49,14 @@ export default function TermsPage() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-4">4. Intellectual Property</h2>
           <p className="text-muted-foreground mb-4">
-            All content on Store SH, including but not limited to text, graphics, logos, and software, is the property of Store SH or its content suppliers and is protected by international copyright laws.
+            All content on Vaultora, including but not limited to text, graphics, logos, and software, is the property of Vaultora or its content suppliers and is protected by international copyright laws.
           </p>
         </section>
 
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-4">5. Refund Policy</h2>
           <p className="text-muted-foreground mb-4">
-            Store SH maintains a strict no-refund policy on all digital products. For detailed information, please refer to our
+            Vaultora maintains a strict no-refund policy on all digital products. For detailed information, please refer to our
             <Link href="/refund-policy" className="text-primary hover:underline mx-1">Refund Policy</Link>
             page.
           </p>
@@ -65,7 +65,7 @@ export default function TermsPage() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-4">6. Limitation of Liability</h2>
           <p className="text-muted-foreground mb-4">
-            Store SH shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use or inability to use our services.
+            Vaultora shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use or inability to use our services.
           </p>
         </section>
 

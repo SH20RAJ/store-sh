@@ -44,7 +44,7 @@ export default function BlogPage() {
       <div className="text-center max-w-3xl mx-auto mb-16">
         <h1 className="text-4xl font-bold tracking-tight mb-4">Our Blog</h1>
         <p className="text-xl text-muted-foreground">
-          Insights, stories, and tips from the Store SH team and community.
+          Insights, stories, and tips from the Vaultora team and community.
         </p>
       </div>
 
