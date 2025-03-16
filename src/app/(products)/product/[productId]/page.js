@@ -1,4 +1,5 @@
 /* @next-codemod-ignore */
+export const runtime = 'edge';
 
 import { Button } from "@/components/ui/button";
 import { Star, Heart } from "lucide-react";

@@ -31,8 +31,16 @@ model Product {
   id          String      @id @default(auto()) @map("_id") @db.ObjectId
   name        String
   description String?
+  smallDescription String?
   price       Float
+  currentPrice       Float?
   images      String[]
+  poster      String?
+  slug        String?      @unique
+  purchaseLink String?
+  demoLink    String?
+  demoVideo    String?
+  demoGIF    String?
   category    Category    @relation(fields: [categoryId], references: [id])
   categoryId  String      @db.ObjectId
   reviews     Review[]
