@@ -1,4 +1,6 @@
 export const runtime = 'edge';
+
+
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Search, SlidersHorizontal } from "lucide-react"
